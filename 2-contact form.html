@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <!-- Form que envia uma requisição GET -->
+    <form action="" method="get">
+      <fieldset>
+        <legend>Entre em contato</legend>
+        <label for="GET-assunto"><strong>Assunto:</strong></label>
+        <select name="subject" id="subject-select">
+          <option value="support">Suporte</option>
+          <option value="suggestions">Sugestão</option>
+          <option value="reports">Reclamação</option></select
+        ><br />
+
+        <label for="User"> <strong>Nome Completo:</strong> </label><br />
+        <input type="text" id="nome" name="Nome" placeholder="Seu nome" /><br />
+        <br />
+
+        <label for="email"><strong>Email:</strong></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@seudominio.com"
+        />
+        <br /><br />
+
+        <label for="submit"><strong>Mensagem</strong></label
+        ><br />
+        <form action="/action_page.php" id="usrform"></form>
+
+        <textarea name="comment" form="usrform">Enter text here...</textarea
+        ><br /><br />
+
+        <input type="checkbox" id="submit" name="submit" unchecked />
+        <label for="scales">Aceito receber novidades por e-mail</label
+        ><br /><br />
+        <button>Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
